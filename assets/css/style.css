@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-Open-Sans);
+    font-weight: var(--fw-regular);
+}
+
+:root{
+    /* primary color */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* accent color */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* natural color */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /* font family */
+    --ff-Raleway: 'Raleway', sans-serif;
+    --ff-Open-Sans: 'Open Sans', sans-serif;
+
+    /* font waite */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+body{
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
