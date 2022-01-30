@@ -274,6 +274,14 @@ body{
 }
 
 
+/*--------------- Access ------------- */
+.access{
+    width: min(90rem, 100%);
+    background-color: var(--Desaturated-Blue);
+    padding: 7.5rem 5vw;
+}
+
+
 
 
 
