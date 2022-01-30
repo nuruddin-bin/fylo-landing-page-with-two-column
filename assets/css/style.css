@@ -33,7 +33,93 @@ body{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: flex-starts;
+}
+
+
+/*----------------- LAYOUT -------------------*/
+.layout{
+    background-color: transparent;
+    width: 100%;
+    padding: 0 5vw;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+}
+
+
+/*--------------- Header ----------------*/
+
+.header{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/*--- logo ---*/
+.header__logo-a{
+    text-decoration: none;
+}
+
+.header__logo-img{
+    display: block;
+    width: 11rem;
+}
+
+/*--- links ---*/
+
+.header__link{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--Desaturated-Blue);
+    margin-left: 1.7rem;
+}
+
+.header__link:nth-child(1){
+    margin-left: 0;
+}
+
+
+
+
+
+
+/*-------------------- RESPONSIVE --------------*/
+
+@media(max-width: 1440px){
+    /*--------------- Header ----------------*/
+    .header{
+        padding: 3.5vw 0;
+    }
+
+    /*--- logo ---*/
+    .header__logo-a{
+        margin: .5rem 0;
+    }
+
+    .header__logo-img{
+        width: 100%;
+        min-width: 6rem;
+    }
+}
+
+
+@media(max-width: 576px){
+    /*--------------- Header ----------------*/
+
+    /*--- logo ---*/
+    .header__logo-img{
+        width: 5rem;
+    }
+
+    /*--- links ---*/
+    .header__link{
+        margin-left: 1rem;
+        font-size: .8rem;
+    }
 }
