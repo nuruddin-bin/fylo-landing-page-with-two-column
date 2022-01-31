@@ -151,7 +151,7 @@ body{
 }
 
 .submit-btn:hover{
-    opacity: .9;
+    background-color: rgb(77, 124, 255);
 }
 
 /*--- right ---*/
@@ -275,13 +275,64 @@ body{
 
 
 /*--------------- Access ------------- */
-.access{
+.main__access{
     width: min(90rem, 100%);
     background-color: var(--Desaturated-Blue);
     padding: 7.5rem 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/*--- left ---*/
+.access__left{
+    width: 50%;
+}
 
+.access__h2{
+    font-size: 2rem;
+    color: var(--Light-Grayish-Blue);
+    font-family: var(--ff-Raleway);
+    font-weight: var(--fw-bold);
+}
+
+.access__p{
+    font-size: 1rem;
+    color: var(--Light-Grayish-Blue);
+    max-width: 55ch;
+    margin-top: 1rem;
+}
+
+/*--- right ---*/
+.access__right{
+    width: 38%;
+}
+
+#email_2{
+    outline: none;
+    width: 95%;
+    height: 2.5rem;
+    padding: .7rem 1rem;
+    font-size: .9rem;
+}
+
+.submit-btn-2{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: .8rem;
+    font-family: var(--ff-Raleway);
+    font-weight: var(--fw-bold);
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Bright-Blue);
+    border: none;
+    border-radius: .2rem;
+    margin-top: 1.5rem;
+    transition: .3s;
+}
+
+.submit-btn-2:hover{
+    background-color: rgb(77, 124, 255);
+}
 
 
 
@@ -344,6 +395,14 @@ body{
 
     .main__p{
         font-size: .9rem;
+    }
+}
+
+
+@media(max-width: 856px){
+    /*--------------- Access ----------------*/
+    .access__h2{
+        font-size: 1.8rem;
     }
 }
 
@@ -426,6 +485,42 @@ body{
     .work__right-img{
         width: min(25rem, 100%);
         margin-inline: auto;
+    }
+
+    /*--------------- Access ----------------*/
+    .main__access{
+        flex-direction: column;
+        padding: 4rem 5vw;
+    }
+
+    /*--- left ---*/
+    .access__left{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .access__p{
+        margin-inline: auto;
+        max-width: 70ch;
+    }
+
+    /*--- right ---*/
+    .access__right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    #email_2{
+        width: min(25rem, 90%);
+    }
+
+    .submit-btn-2{
+        margin-top: .5rem;
+        width: min(25rem, 90%);
     }
 
 }
