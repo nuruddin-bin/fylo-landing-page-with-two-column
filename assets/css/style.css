@@ -84,6 +84,7 @@ body{
     align-items: center;
 }
 
+
 /*--------------- Banner ----------------*/
 .main__banner{
     background-color: transparent;
@@ -335,6 +336,151 @@ body{
 }
 
 
+/*--------------- Footer ----------------*/
+.footer{
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    padding: 5.3rem 0 4rem 0;
+}
+
+/*--- top ---*/
+.footer__logo-wrapper{
+    background-color: transparent;
+    width: min(90rem, 100%);
+    margin-inline: auto;
+    padding: 0 5vw;
+}
+
+.footer__logo-img{
+    display: block;
+    width: 15%;
+    min-width: 9rem;
+}
+
+/*--- bottom ---*/
+.footer__info{
+    background-color: transparent;
+    width: min(90rem, 100%);
+    margin-inline: auto;
+    padding: 3rem 5vw 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 1st */
+.info__contact{
+    background-color: transparent;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact__box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact__box:nth-child(1){
+    margin-bottom: 1rem;
+}
+
+.contact__img{
+    display: block;
+}
+
+.contact__txt{
+    color: var(--Light-Grayish-Blue);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* 2nd */
+.info__links-wrapper{
+    background-color: transparent;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2rem);
+    grid-template-areas: 
+    "a e"
+    "b f"
+    "c g"
+    "d .";
+}
+
+.link_ul{
+    list-style-type: none;
+}
+
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+.g{
+    grid-area: g;
+}
+
+.link_ul a{
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.link_ul a:hover{
+    color: var(--Bright-Blue);
+}
+
+/* 3rd */
+.info__social{
+    background-color: transparent;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social__icon{
+    background-color: transparent;
+    color: var(--Light-Grayish-Blue);
+    text-decoration: none;
+    font-size: 1rem;
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.social__icon:nth-child(2){
+    margin: 0 1rem;
+}
+
+.social__icon:hover{
+    color: var(--Bright-Blue);
+    border: 1px solid var(--Bright-Blue);
+}
+
+
 
 
 /*-------------------- RESPONSIVE --------------*/
@@ -523,6 +669,39 @@ body{
         width: min(25rem, 90%);
     }
 
+    /*--------------- Footer ----------------*/
+    
+    .footer__info{
+        flex-direction: column;
+    }
+
+    /* 1st */
+    .info__contact{
+        width: 100%;
+    }
+
+    /* 2nd */
+    .info__links-wrapper{
+        width: 100%;
+        margin: 3rem 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 2rem);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "."
+        "e"
+        "f"
+        "g";
+    }
+
+    /* 3rd */
+    .info__social{
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 
